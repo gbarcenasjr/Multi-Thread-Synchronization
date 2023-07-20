@@ -1,0 +1,148 @@
+Script started on Tue Apr 25 22:36:49 2023
+[1m[7m%[27m[1m[0m                                                                                ]7;file://Gerardo-MacBookPro.local/Users/gerardobarcenas/Documents/Programing-Projects/C%20Language/OS%20Project%20%234[0m[27m[24m[Jgerardobarcenas@Gerardo-MacBookPro OS Project #4 % [K[?2004hggcc - 
+[Jbuffer.h      makefile      project.c     project.o     
+gbprog4*      project*      project.exe*  typescript    [A[A[0m[27m[24m[51Cgcc[K[1Cpr
+[J[A[57Coject.c p -o project[?2004l
+[J[1mproject.c:25:13: [0m[0;1;35mwarning: [0m[1mformat specifies type 'long' but the argument has type 'pthread_t _Nonnull' (aka 'struct _opaque_pthread_t *') [-Wformat][0m
+            pthread_self(), rand_time);
+[0;1;32m            ^~~~~~~~~~~~~~
+[0m[1mproject.c:51:13: [0m[0;1;35mwarning: [0m[1mformat specifies type 'long' but the argument has type 'pthread_t _Nonnull' (aka 'struct _opaque_pthread_t *') [-Wformat][0m
+            pthread_self(), rand_time);
+[0;1;32m            ^~~~~~~~~~~~~~
+[0m[1mproject.c:86:5: [0m[0;1;35mwarning: [0m[1m'sem_init' is deprecated [-Wdeprecated-declarations][0m
+    sem_init(&semEmpty, 0, MAX_BUF_LEN);
+[0;1;32m    ^
+[0m[1m/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/semaphore.h:55:42: [0m[0;1;30mnote: [0m'sem_init' has been explicitly marked deprecated here[0m
+int sem_init(sem_t *, int, unsigned int) __deprecated;
+[0;1;32m                                         ^
+[0m[1m/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:211:40: [0m[0;1;30mnote: [0mexpanded from macro '__deprecated'[0m
+#define __deprecated    __attribute__((__deprecated__))
+[0;1;32m                                       ^
+[0m[1mproject.c:87:5: [0m[0;1;35mwarning: [0m[1m'sem_init' is deprecated [-Wdeprecated-declarations][0m
+    sem_init(&semFull, 0, 0);
+[0;1;32m    ^
+[0m[1m/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/semaphore.h:55:42: [0m[0;1;30mnote: [0m'sem_init' has been explicitly marked deprecated here[0m
+int sem_init(sem_t *, int, unsigned int) __deprecated;
+[0;1;32m                                         ^
+[0m[1m/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:211:40: [0m[0;1;30mnote: [0mexpanded from macro '__deprecated'[0m
+#define __deprecated    __attribute__((__deprecated__))
+[0;1;32m                                       ^
+[0m[1mproject.c:95:62: [0m[0;1;35mwarning: [0m[1mformat specifies type 'long' but the argument has type 'pthread_t' (aka 'struct _opaque_pthread_t *') [-Wformat][0m
+            printf("Creating producer thread with id %ld\n", prodThreadIDs[i]);
+[0;1;32m                                                     ~~~     ^~~~~~~~~~~~~~~~
+[0m[1mproject.c:105:62: [0m[0;1;35mwarning: [0m[1mformat specifies type 'long' but the argument has type 'pthread_t' (aka 'struct _opaque_pthread_t *') [-Wformat][0m
+            printf("Creating consumer thread with id %ld\n", consThreadIDs[i]);
+[0;1;32m                                                     ~~~     ^~~~~~~~~~~~~~~~
+[0m[1mproject.c:130:5: [0m[0;1;35mwarning: [0m[1m'sem_destroy' is deprecated [-Wdeprecated-declarations][0m
+    sem_destroy(&semEmpty);
+[0;1;32m    ^
+[0m[1m/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/semaphore.h:53:26: [0m[0;1;30mnote: [0m'sem_destroy' has been explicitly marked deprecated here[0m
+int sem_destroy(sem_t *) __deprecated;
+[0;1;32m                         ^
+[0m[1m/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:211:40: [0m[0;1;30mnote: [0mexpanded from macro '__deprecated'[0m
+#define __deprecated    __attribute__((__deprecated__))
+[0;1;32m                                       ^
+[0m[1mproject.c:131:5: [0m[0;1;35mwarning: [0m[1m'sem_destroy' is deprecated [-Wdeprecated-declarations][0m
+    sem_destroy(&semFull);
+[0;1;32m    ^
+[0m[1m/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/semaphore.h:53:26: [0m[0;1;30mnote: [0m'sem_destroy' has been explicitly marked deprecated here[0m
+int sem_destroy(sem_t *) __deprecated;
+[0;1;32m                         ^
+[0m[1m/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:211:40: [0m[0;1;30mnote: [0mexpanded from macro '__deprecated'[0m
+#define __deprecated    __attribute__((__deprecated__))
+[0;1;32m                                       ^
+[0m8 warnings generated.
+[1m[7m%[27m[1m[0m                                                                                ]7;file://Gerardo-MacBookPro.local/Users/gerardobarcenas/Documents/Programing-Projects/C%20Language/OS%20Project%20%234[0m[27m[24m[Jgerardobarcenas@Gerardo-MacBookPro OS Project #4 % [K[?2004h../
+[Jgbprog4*      project*      project.exe*[A[0m[27m[24m[51C./[Kpr
+[J[A[55Coject 25 1 1[?2004l
+[J
+Main thread beginning
+
+Creating producer thread with id 6156546048
+Producer thread 6156546048 sleeping for 2 seconds
+Creating consumer thread with id 6157119488
+Main thread sleeping for 25 seconds
+Removed item 0 from position 0
+Consumed 0
+Consumer thread 6157119488 sleeping for 2 seconds
+[ ] [ ] [ ] [ ] [ ] Inserted item 94 at position -1
+[ ] [ ] [ ] [ ] [ ] In = 1, Out = 94
+Producer thread 6156546048 sleeping for 0 seconds
+[ ] In = 1, Out = 94
+Inserted item 12 at position 0
+[12] [ ] [ ] [ ] [ ] In = 2, Out = 94
+Producer thread 6156546048 sleeping for 4 seconds
+Removed item 12 from position 1
+Consumed 12
+Consumer thread 6157119488 sleeping for 2 seconds
+[ ] [ ] [ ] [ ] [ ] In = 2, Out = 95
+Removed item 95 from position 0
+Consumed 95
+Consumer thread 6157119488 sleeping for 0 seconds
+[ ] [ ] [ ] [ ] [ ] [ ] In = 2, Out = 96
+Removed item 2 from position -1
+Consumed 2
+Consumer thread 6157119488 sleeping for 4 seconds
+Inserted item 74 at position -2
+[ ] [ ] [ ] [ ] [ ] [ ] In = 75, Out = 97
+Producer thread 6156546048 sleeping for 3 seconds
+[ ] [ ] [ ] [ ] [ ] [ ] In = 75, Out = 97
+Removed item 75 from position -1
+Consumed 75
+Consumer thread 6157119488 sleeping for 3 seconds
+Inserted item 56 at position -2
+[ ] [ ] [ ] [ ] [ ] [ ] In = 57, Out = 98
+Producer thread 6156546048 sleeping for 0 seconds
+Inserted item 84 at position -1
+[ ] [ ] [ ] [ ] [ ] In = 58, Out = 84
+Producer thread 6156546048 sleeping for 3 seconds
+[ ] [ ] [ ] [ ] [ ] In = 58, Out = 84
+Removed item 84 from position 0
+Consumed 84
+Consumer thread 6157119488 sleeping for 4 seconds
+Inserted item 78 at position -1
+[ ] [ ] [ ] [ ] [ ] In = 59, Out = 78
+Producer thread 6156546048 sleeping for 3 seconds
+[ ] [ ] [ ] [ ] [ ] In = 59, Out = 78
+Removed item 78 from position 0
+Consumed 78
+Consumer thread 6157119488 sleeping for 3 seconds
+Inserted item 20 at position -1
+[ ] [ ] [ ] [ ] [ ] In = 60, Out = 20
+Producer thread 6156546048 sleeping for 3 seconds
+[ ] [ ] [ ] [ ] [ ] In = 60, Out = 20
+Removed item 20 from position 0
+Consumed 20
+Consumer thread 6157119488 sleeping for 0 seconds
+[ ] [ ] [ ] [ ] [ ] [ ] In = 60, Out = 21
+Removed item 60 from position -1
+Consumed 60
+Consumer thread 6157119488 sleeping for 4 seconds
+Inserted item 85 at position -2
+[ ] [ ] [ ] [ ] [ ] [ ] In = 86, Out = 22
+Producer thread 6156546048 sleeping for 3 seconds
+Inserted item 79 at position -1
+[ ] [ ] [ ] [ ] [ ] In = 87, Out = 79
+Producer thread 6156546048 sleeping for 2 seconds
+[ ] [ ] [ ] [ ] [ ] In = 87, Out = 79
+Removed item 79 from position 0
+Consumed 79
+Consumer thread 6157119488 sleeping for 2 seconds
+Inserted item 60 at position -1
+[ ] [ ] [ ] [ ] [ ] In = 88, Out = 60
+Producer thread 6156546048 sleeping for 4 seconds
+[ ] [ ] [ ] [ ] [ ] In = 88, Out = 60
+Removed item 60 from position 0
+Consumed 60
+Consumer thread 6157119488 sleeping for 4 seconds
+
+Main thread exiting after 25 seconds
+
+[1m[7m%[27m[1m[0m                                                                                ]7;file://Gerardo-MacBookPro.local/Users/gerardobarcenas/Documents/Programing-Projects/C%20Language/OS%20Project%20%234[0m[27m[24m[Jgerardobarcenas@Gerardo-MacBookPro OS Project #4 % [K[?2004heexit[?2004l
+
+Saving session...
+...copying shared history...
+...saving history...truncating history files...
+...completed.
+
+Script done on Tue Apr 25 22:37:58 2023
